@@ -1,6 +1,6 @@
 import cron from "node-cron";
-import Item from "../models/Item.js"; // 💡 Importación corregida
-import Recommendation from "../models/Recommendation.js"; // 💡 Importación corregida
+import Item from "../models/item.js"; 
+import Recommendation from "../models/Recommendation.js"; 
 
 const buildRecommendationsForNote = (noteText) => {
   const recs = [];
