@@ -44,7 +44,7 @@ app.get('/', (req, res) => res.send("🚀 Server MyDesk on"));
 
 // Endpoint principal
 app.use('/api/estudiante', authRoutes);
-app.use('/api/estudiante', userRoutes); 
+app.use('/api', userRoutes); 
 app.use('/api', itemRoutes); 
 app.use('/api', aiRoutes); 
 app.use('/api', workspaceRoutes); 
