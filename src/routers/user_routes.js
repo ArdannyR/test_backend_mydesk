@@ -11,7 +11,7 @@ import { verifyAuth } from '../middlewares/auth.js';
 const router = Router();
 router.use(verifyAuth);
 
-router.get('/perfil', getProfile);
+router.get('/estudiante/perfil', getProfile);
 router.put('/estudiante/actualizarpassword', updatePassword); 
 router.put('/estudiante/:id', updateProfile);
 router.put('/preferencias', updatePreferences);
